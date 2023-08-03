@@ -12,4 +12,5 @@ let len = str.length;
 			return "false"
 	
 }
+palindrome(str);
 module.exports = palindrome
