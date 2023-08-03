@@ -1,16 +1,12 @@
 // complete the given function
 
 function palindrome(str){
-let len = str.length;
-	for(let i=0;i<len/2;i++){
-		
-		if(str[i]==str[len-i-1]){
-			return "true"
-		}
-		
-	}
-			return "false"
-	
+ const cleanString = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+
+  // Step 2: Compare with its reverse
+  const reversedString = cleanString.split('').reverse().join('');
+
+  // Step 3: Check if both strings are the same
+  return cleanString === reversedString;
 }
-palindrome(str);
 module.exports = palindrome
