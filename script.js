@@ -6,8 +6,8 @@ let len = str.length;
 		
 		if(str[i]==str[len-i-1]){
 			return "true"
-		}else{
 		}
+		
 	}
 			return "false"
 	
